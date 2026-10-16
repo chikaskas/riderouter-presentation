@@ -19,171 +19,285 @@
             <h1 class="text-lg font-bold tracking-tight text-white">RideRouter Pitch Deck</h1>
         </div>
         <div class="text-sm font-medium text-slate-400">
-            Slide <span id="current-slide" class="text-emerald-400">1</span> of <span id="total-slides">6</span>
+            Slide <span id="current-slide" class="text-emerald-400">1</span> of <span id="total-slides">14</span>
         </div>
     </header>
 
     <!-- Main Slide Container -->
     <main class="flex-1 flex items-center justify-center p-6 sm:p-10 relative overflow-y-auto">
 
-        <!-- SLIDE 1: Title Slide -->
+        <!-- SLIDE 1: Title & Logo -->
         <div class="slide active flex-col items-center text-center max-w-4xl space-y-6">
-            <div class="inline-flex p-4 bg-emerald-500/10 border border-emerald-500/30 rounded-3xl text-emerald-400 mb-2 shadow-2xl shadow-emerald-500/10">
-                <svg class="w-14 h-14" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m6-6v8.25m.5.5b3 3 0 11-6 0m6 0h-6m6 0v-8.25m-6 8.25V15M3 13.5h3.75a2.25 2.25 0 012.25 2.25v3.75M3 13.5V9.75A2.25 2.25 0 015.25 7.5h13.5A2.25 2.25 0 0121 9.75v3.75m-18 0h18"></path></svg>
+            <div class="w-28 h-28 mx-auto bg-slate-900 border-2 border-dashed border-emerald-500/50 rounded-2xl flex items-center justify-center overflow-hidden shadow-xl">
+                <img src="pictures/logo.png" alt="Logo" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <span class="text-xs text-emerald-400 font-mono text-center p-2" style="display:none;">📁 pictures/logo.png</span>
             </div>
-            <h2 class="text-5xl font-black tracking-tight text-white sm:text-7xl">RideRouter</h2>
-            <p class="text-xl font-medium text-emerald-400 tracking-wide uppercase">Safe Rides, Special Moments</p>
-            <p class="text-xl text-slate-400 max-w-2xl leading-relaxed">Bangkok's safer cycling cockpit. Ride bright, ride aware with intelligent routing, hazard reporting, and voice AI.</p>
-            <div class="pt-4 flex flex-wrap justify-center gap-4">
-                <a href="https://riderouter.vercel.app" target="_blank" class="px-8 py-4 bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-lg rounded-2xl shadow-xl shadow-emerald-600/20 transition-all flex items-center space-x-3">
-                    <span>🚀 Launch Live WebApp</span>
-                </a>
+            <h2 class="text-5xl font-black tracking-tight text-white sm:text-6xl">RideRouter</h2>
+            <p class="text-xl font-medium text-emerald-400 tracking-wide uppercase">Safe Rides, Special Moments[cite: 1, 2]</p>
+            <p class="text-slate-400 max-w-xl">Bangkok's safer cycling cockpit. Ride bright, ride aware.</p>
+        </div>
+
+        <!-- SLIDE 2: What is RideRouter? -->
+        <div class="slide flex-col max-w-5xl w-full space-y-6">
+            <div class="border-b border-slate-800 pb-3">
+                <span class="text-emerald-400 font-semibold text-xs uppercase tracking-wider">Overview</span>
+                <h2 class="text-3xl font-bold text-white mt-1">What is RideRouter?</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+                <div class="space-y-4 text-slate-300">
+                    <p class="text-lg">Ride Router is an app/web platform designed to help cyclists and tourists find the safest journey from one destination to another[cite: 3].</p>
+                    <ul class="space-y-2 text-sm">
+                        <li class="flex items-center space-x-2"><span>🛡️</span> <span>Gives every route a distinct safety score[cite: 3].</span></li>
+                        <li class="flex items-center space-x-2"><span>🗺️</span> <span>Pick between safest, scenic, or fastest routes[cite: 3].</span></li>
+                        <li class="flex items-center space-x-2"><span>⚠️</span> <span>Riders can report hazards like potholes[cite: 3].</span></li>
+                        <li class="flex items-center space-x-2"><span>🪙</span> <span>Earn coins for riding and feedback to exchange rewards[cite: 3].</span></li>
+                    </ul>
+                </div>
+                <div class="bg-slate-900 border-2 border-dashed border-slate-800 rounded-2xl h-64 flex flex-col items-center justify-center text-center p-4">
+                    <img src="pictures/what_is_riderouter.png" alt="App Overview" class="w-full h-full object-cover rounded-xl" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <span class="text-xs text-slate-400 font-mono">📁 pictures/what_is_riderouter.png</span>
+                </div>
             </div>
         </div>
 
-        <!-- SLIDE 2: The Urban Crisis (Problem & Facts) -->
+        <!-- SLIDE 3: Current Problem -->
         <div class="slide flex-col max-w-5xl w-full space-y-6">
             <div class="border-b border-slate-800 pb-3">
-                <span class="text-emerald-400 font-semibold text-xs uppercase tracking-wider">The Problem in Bangkok</span>
-                <h2 class="text-3xl font-bold text-white mt-1">High Risks & Dangerous Roads</h2>
+                <span class="text-emerald-400 font-semibold text-xs uppercase tracking-wider">Market Need</span>
+                <h2 class="text-3xl font-bold text-white mt-1">Current Problem in Bangkok</h2>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <div class="bg-slate-900 border border-slate-800 p-5 rounded-2xl space-y-2">
+                    <h3 class="font-bold text-rose-400 text-lg">High Accident Rates</h3>
+                    <p class="text-sm text-slate-400">Bangkok cyclists are involved in tragic incidents, ranking among the most dangerous roads in the world[cite: 4].</p>
+                </div>
+                <div class="bg-slate-900 border border-slate-800 p-5 rounded-2xl space-y-2">
+                    <h3 class="font-bold text-amber-400 text-lg">Damaged Roads</h3>
+                    <p class="text-sm text-slate-400">Severe road degradation across Bangkok poses significant risks to cyclists[cite: 4].</p>
+                </div>
+                <div class="bg-slate-900 border border-slate-800 p-5 rounded-2xl space-y-2">
+                    <h3 class="font-bold text-blue-400 text-lg">Air Quality</h3>
+                    <p class="text-sm text-slate-400">Industrial zones and transport release large levels of harmful gases, creating negative externalities[cite: 4].</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 4: Factual Data -->
+        <div class="slide flex-col max-w-5xl w-full space-y-6">
+            <div class="border-b border-slate-800 pb-3">
+                <span class="text-emerald-400 font-semibold text-xs uppercase tracking-wider">Evidence & Statistics</span>
+                <h2 class="text-3xl font-bold text-white mt-1">Factual Data</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
+                <div class="bg-slate-900 border border-slate-800 p-5 rounded-2xl space-y-2">
                     <span class="text-3xl font-black text-rose-400">74.2%</span>
-                    <h3 class="font-bold text-white">Evening Risk Rate</h3>
-                    <p class="text-sm text-slate-400">Chances of risk in crowded areas spike drastically in evenings due to poor visibility and road conditions[cite: 5].</p>
+                    <h4 class="font-bold text-white">Evening Risk</h4>
+                    <p class="text-xs text-slate-400">Risk of accidents in crowded areas jumps from 55.5% in daylight to 74.2% in evenings due to poor road conditions and lack of signals[cite: 5].</p>
                 </div>
                 <div class="bg-slate-900 border border-slate-800 p-5 rounded-2xl space-y-2">
                     <span class="text-3xl font-black text-amber-400">75%</span>
-                    <h3 class="font-bold text-white">Unsafe Roads</h3>
-                    <p class="text-sm text-slate-400">3/4 of Bangkok roads covering 1,000 km are deemed unsafe due to sharp curves and self-structured potholes[cite: 5].</p>
+                    <h4 class="font-bold text-white">Unsafe Roads</h4>
+                    <p class="text-xs text-slate-400">3/4 of Bangkok roads (covering 1000 km) deemed unsafe due to curved paths and potholes[cite: 5].</p>
                 </div>
                 <div class="bg-slate-900 border border-slate-800 p-5 rounded-2xl space-y-2">
                     <span class="text-3xl font-black text-blue-400">4×</span>
-                    <h3 class="font-bold text-white">WHO PM2.5 Limit</h3>
-                    <p class="text-sm text-slate-400">Severe air pollution where traffic exhaust causes 26% to 60% of Bangkok's toxic PM2.5[cite: 5, 10].</p>
+                    <h4 class="font-bold text-white">WHO PM2.5</h4>
+                    <p class="text-xs text-slate-400">PM2.5 concentration is 4.2 times WHO annual guidelines, indicating severe hazardous air pollution[cite: 5].</p>
                 </div>
             </div>
         </div>
 
-        <!-- SLIDE 3: What is RideRouter & Key Features -->
+        <!-- SLIDE 5: Our Solution -->
         <div class="slide flex-col max-w-5xl w-full space-y-6">
             <div class="border-b border-slate-800 pb-3">
-                <span class="text-emerald-400 font-semibold text-xs uppercase tracking-wider">Our Solution</span>
-                <h2 class="text-3xl font-bold text-white mt-1">Smart Routing & Safety Scoring</h2>
+                <span class="text-emerald-400 font-semibold text-xs uppercase tracking-wider">Value Proposition</span>
+                <h2 class="text-3xl font-bold text-white mt-1">Our Solution</h2>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
-                <div class="space-y-4">
-                    <p class="text-slate-300 text-lg">RideRouter is a dedicated web and mobile platform helping cyclists and tourists find the safest journey from origin to destination[cite: 3].</p>
-                    <ul class="space-y-3 text-slate-300">
-                        <li class="flex items-center space-x-3 bg-slate-900/60 p-3.5 rounded-xl border border-slate-800">
-                            <span class="text-emerald-400 font-bold">🛡️</span> <span><strong>Safety Scores:</strong> Every route is evaluated and given a distinct safety score[cite: 3].</span>
-                        </li>
-                        <li class="flex items-center space-x-3 bg-slate-900/60 p-3.5 rounded-xl border border-slate-800">
-                            <span class="text-emerald-400 font-bold">🗺️</span> <span><strong>Custom Route Modes:</strong> Pick between Safest, Scenic (e.g., through Benjakitti Park), or Fastest Direct paths[cite: 3, 15].</span>
-                        </li>
-                        <li class="flex items-center space-x-3 bg-slate-900/60 p-3.5 rounded-xl border border-slate-800">
-                            <span class="text-emerald-400 font-bold">🪙</span> <span><strong>Community Rewards:</strong> Report hazards like potholes and give feedback to earn tokens/coins[cite: 3].</span>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Visual / Placeholder for App View -->
-                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col justify-center space-y-4 shadow-xl">
-                    <div class="flex justify-between items-center bg-slate-800/60 p-3 rounded-xl border border-slate-700">
-                        <span class="text-xs font-semibold text-emerald-400">FASTEST DIRECT</span>
-                        <span class="text-xs text-slate-400">38 min • 9.0 km</span>
-                    </div>
-                    <div class="flex justify-between items-center bg-slate-800/60 p-3 rounded-xl border border-slate-700">
-                        <span class="text-xs font-semibold text-indigo-400">SCENIC GREENWAY</span>
-                        <span class="text-xs text-slate-400">51 min • 11.1 km</span>
-                    </div>
-                    <p class="text-xs text-center text-slate-500">[ Live Interactive Routing & Weather Integration ]</p>
+                <p class="text-slate-300 text-lg leading-relaxed">Beyond safety and convenience, RideRouter offers flexible route options tailored to what matters most to the rider: <strong>Scenic</strong>, <strong>Safest</strong>, or <strong>Fastest</strong> routes[cite: 6].</p>
+                <div class="bg-slate-900 border-2 border-dashed border-slate-800 rounded-2xl h-56 flex flex-col items-center justify-center text-center p-4">
+                    <img src="pictures/solution_preview.png" alt="Solution Preview" class="w-full h-full object-cover rounded-xl" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <span class="text-xs text-slate-400 font-mono">📁 pictures/solution_preview.png</span>
                 </div>
             </div>
         </div>
 
-        <!-- SLIDE 4: Health Benefits & Target Audience -->
+        <!-- SLIDE 6: The Vision of Ride Router -->
         <div class="slide flex-col max-w-5xl w-full space-y-6">
             <div class="border-b border-slate-800 pb-3">
-                <span class="text-emerald-400 font-semibold text-xs uppercase tracking-wider">Target Audience & Impact</span>
-                <h2 class="text-3xl font-bold text-white mt-1">Who We Help & Health Transformation</h2>
+                <span class="text-emerald-400 font-semibold text-xs uppercase tracking-wider">Future Outlook</span>
+                <h2 class="text-3xl font-bold text-white mt-1">The Vision of RideRouter</h2>
+            </div>
+            <div class="bg-slate-900 border border-slate-800 p-8 rounded-2xl space-y-4">
+                <p class="text-slate-200 text-lg leading-relaxed">Ride Router envisions a future where cycling is a safe, everyday choice in bustling cities around the world[cite: 7].</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
+                    <div class="bg-slate-800/50 p-4 rounded-xl border border-slate-700/50">
+                        <h4 class="font-semibold text-emerald-400 mb-1">🚗 Locals</h4>
+                        <p class="text-sm text-slate-400">Swap cars and motorbikes for bikes on routes built for their safety[cite: 7].</p>
+                    </div>
+                    <div class="bg-slate-800/50 p-4 rounded-xl border border-slate-700/50">
+                        <h4 class="font-semibold text-emerald-400 mb-1">🧳 Tourists</h4>
+                        <p class="text-sm text-slate-400">Explore new places at their own pace on two wheels, confident every route keeps them safe[cite: 7].</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 7: Health Benefits -->
+        <div class="slide flex-col max-w-5xl w-full space-y-6">
+            <div class="border-b border-slate-800 pb-3">
+                <span class="text-emerald-400 font-semibold text-xs uppercase tracking-wider">Impact</span>
+                <h2 class="text-3xl font-bold text-white mt-1">Health Transformation</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+                <div class="space-y-3 text-slate-300 text-sm">
+                    <div class="bg-slate-900 p-4 rounded-xl border border-slate-800">
+                        <strong class="text-emerald-400 text-base">Heart Disease Cut:</strong> Regular riding slashes the risk of developing heart disease by **46% to 52%** and reduces cardiovascular mortality by **24%**[cite: 9].
+                    </div>
+                    <div class="bg-slate-900 p-4 rounded-xl border border-slate-800">
+                        <strong class="text-emerald-400 text-base">Diabetes & Cancer:</strong> Cuts risks of type 2 diabetes and cancer by up to **40%**[cite: 9].
+                    </div>
+                    <div class="bg-slate-900 p-4 rounded-xl border border-slate-800">
+                        <strong class="text-emerald-400 text-base">Mental Well-being:</strong> **59%** of cyclists directly link riding to increased personal joy, reducing stress and anxiety[cite: 9].
+                    </div>
+                </div>
+                <div class="bg-slate-900 border-2 border-dashed border-slate-800 rounded-2xl h-64 flex flex-col items-center justify-center text-center p-4">
+                    <img src="pictures/health_benefits.png" alt="Health Benefits" class="w-full h-full object-cover rounded-xl" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <span class="text-xs text-slate-400 font-mono">📁 pictures/health_benefits.png</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 8: Air Quality & The Cycling Cure -->
+        <div class="slide flex-col max-w-5xl w-full space-y-6">
+            <div class="border-b border-slate-800 pb-3">
+                <span class="text-emerald-400 font-semibold text-xs uppercase tracking-wider">Environment</span>
+                <h2 class="text-3xl font-bold text-white mt-1">Air Quality & Pollution Analysis</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+                <div class="bg-slate-900 border border-slate-800 p-5 rounded-2xl space-y-2">
+                    <h3 class="font-bold text-rose-400 text-base">The Air Crisis</h3>
+                    <p class="text-slate-400">Traffic exhaust causes **26% to 60%** of Bangkok's PM2.5 pollution, trapping toxic air over the city from November to March[cite: 10].</p>
+                </div>
+                <div class="bg-slate-900 border border-slate-800 p-5 rounded-2xl space-y-2">
+                    <h3 class="font-bold text-emerald-400 text-base">The Health Verdict</h3>
+                    <p class="text-slate-400">Cardiovascular benefits heavily outweigh smog risks—taking over **1.5 hours of daily cycling** before pollution exposure outweighs exercise gains[cite: 10].</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 9: High Rates of Accidents -->
+        <div class="slide flex-col max-w-5xl w-full space-y-6">
+            <div class="border-b border-slate-800 pb-3">
+                <span class="text-emerald-400 font-semibold text-xs uppercase tracking-wider">Safety Data</span>
+                <h2 class="text-3xl font-bold text-white mt-1">Fatality Risk on Main Corridors</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+                <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl space-y-3">
+                    <h3 class="text-xl font-bold text-white">Extreme Fatality Risk</h3>
+                    <p class="text-slate-300 text-sm">While bicycles are involved in under 1% of all recorded road crashes in the capital, BMA data indicates that the chance of a collision leading to a cyclist's death is roughly <strong>85%</strong> on main urban corridors where average vehicle speeds exceed 80 km/h[cite: 11].</p>
+                </div>
+                <div class="bg-slate-900 border-2 border-dashed border-slate-800 rounded-2xl h-56 flex flex-col items-center justify-center text-center p-4">
+                    <img src="pictures/accident_stats.png" alt="Accident Stats" class="w-full h-full object-cover rounded-xl" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <span class="text-xs text-slate-400 font-mono">📁 pictures/accident_stats.png</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 10: Target Consumers -->
+        <div class="slide flex-col max-w-5xl w-full space-y-6">
+            <div class="border-b border-slate-800 pb-3">
+                <span class="text-emerald-400 font-semibold text-xs uppercase tracking-wider">Audience</span>
+                <h2 class="text-3xl font-bold text-white mt-1">Target Consumers</h2>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl space-y-4">
-                    <h3 class="text-xl font-bold text-emerald-300">👥 Target Consumers</h3>
-                    <div class="space-y-3">
-                        <div class="bg-slate-800/50 p-3.5 rounded-xl border border-slate-700/50">
-                            <h4 class="font-semibold text-white">🚲 Cycling Enthusiasts</h4>
-                            <p class="text-sm text-slate-400">Commuters and riders looking for secure, optimized city paths.</p>
-                        </div>
-                        <div class="bg-slate-800/50 p-3.5 rounded-xl border border-slate-700/50">
-                            <h4 class="font-semibold text-white">❤️ Health-Conscious Individuals</h4>
-                            <p class="text-sm text-slate-400">Those following an active, healthy lifestyle.</p>
-                        </div>
-                        <div class="bg-slate-800/50 p-3.5 rounded-xl border border-slate-700/50">
-                            <h4 class="font-semibold text-white">🧳 Tourists</h4>
-                            <p class="text-sm text-slate-400">Visitors exploring new city places safely on two wheels[cite: 7].</p>
-                        </div>
-                    </div>
+                <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl space-y-3 text-center">
+                    <div class="text-3xl">🚴‍♂️</div>
+                    <h3 class="font-bold text-white text-lg">Cycling Enthusiasts</h3>
+                    <p class="text-sm text-slate-400">Those who follow a healthy lifestyle and commute regularly[cite: 12].</p>
                 </div>
-                <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl space-y-4">
-                    <h3 class="text-xl font-bold text-emerald-300">💪 The Power of Cycling</h3>
-                    <ul class="space-y-3 text-slate-300 text-sm">
-                        <li class="flex items-start space-x-2">
-                            <span class="text-emerald-400 font-bold">•</span>
-                            <span>Slashes heart disease risk by <strong>46% to 52%</strong> and cuts diabetes/cancer risks by up to <strong>40%</strong>[cite: 9].</span>
-                        </li>
-                        <li class="flex items-start space-x-2">
-                            <span class="text-emerald-400 font-bold">•</span>
-                            <span><strong>59%</strong> of cyclists directly link riding to increased personal joy and reduced stress[cite: 9].</span>
-                        </li>
-                        <li class="flex items-start space-x-2">
-                            <span class="text-emerald-400 font-bold">•</span>
-                            <span>Cardiovascular exercise gains heavily outweigh pollution risks for daily urban commuters[cite: 10].</span>
-                        </li>
-                    </ul>
+                <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl space-y-3 text-center">
+                    <div class="text-3xl">🧳</div>
+                    <h3 class="font-bold text-white text-lg">Tourists</h3>
+                    <p class="text-sm text-slate-400">Visitors wanting to explore city sights safely on two wheels[cite: 12].</p>
                 </div>
             </div>
         </div>
 
-        <!-- SLIDE 5: U-Bot & ElevenLabs Voice Integration -->
+        <!-- SLIDE 11: How U-Bot will be applied -->
         <div class="slide flex-col max-w-5xl w-full space-y-6">
             <div class="border-b border-slate-800 pb-3">
-                <span class="text-emerald-400 font-semibold text-xs uppercase tracking-wider">Advanced Technology</span>
-                <h2 class="text-3xl font-bold text-white mt-1">Joe (U-Bot) & ElevenLabs Voice UI</h2>
+                <span class="text-emerald-400 font-semibold text-xs uppercase tracking-wider">AI Integration</span>
+                <h2 class="text-3xl font-bold text-white mt-1">How U-Bot is Applied</h2>
             </div>
-            <p class="text-slate-300 text-lg">Designed for maximum safety so riders never take their hands off the handlebars.</p>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2">
-                <div class="bg-emerald-950/20 border border-emerald-500/30 p-6 rounded-2xl space-y-3">
-                    <div class="flex items-center space-x-3">
-                        <div class="p-2 bg-emerald-500/20 rounded-xl text-emerald-400">🤖</div>
-                        <h3 class="text-xl font-bold text-emerald-200">Joe Personal Assistant</h3>
-                    </div>
-                    <p class="text-slate-300 leading-relaxed text-sm">Acts as your intelligent on-road companion, delivering hands-free direction guidance and live insights dynamically[cite: 15].</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+                <div class="space-y-4 text-slate-300">
+                    <p class="text-lg">Meet <strong>Joe</strong>, your personal assistant chatbot integrated into the RideRouter cockpit[cite: 15].</p>
+                    <ul class="space-y-2 text-sm">
+                        <li>🤖 Acts as an autonomous voice agent.</li>
+                        <li>💬 Provides real-time conversational assistance.</li>
+                        <li>🚀 Guides riders hands-free through complex urban junctions.</li>
+                    </ul>
                 </div>
-                <div class="bg-teal-950/20 border border-teal-500/30 p-6 rounded-2xl space-y-3">
-                    <div class="flex items-center space-x-3">
-                        <div class="p-2 bg-teal-500/20 rounded-xl text-teal-400">🎙️</div>
-                        <h3 class="text-xl font-bold text-teal-200">ElevenLabs TTS & STT</h3>
-                    </div>
-                    <p class="text-slate-300 leading-relaxed text-sm">Utilizes ElevenLabs for responsive, ultra-accurate Text-to-Speech and Speech-to-Text translation, making voice interaction seamless[cite: 15].</p>
+                <div class="bg-slate-900 border-2 border-dashed border-slate-800 rounded-2xl h-64 flex flex-col items-center justify-center text-center p-4">
+                    <img src="pictures/ubot_joe.png" alt="U-Bot Joe" class="w-full h-full object-cover rounded-xl" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <span class="text-xs text-slate-400 font-mono">📁 pictures/ubot_joe.png</span>
                 </div>
             </div>
         </div>
 
-        <!-- SLIDE 6: Conclusion / Live Demo -->
+        <!-- SLIDE 12: Cockpit & Routing UI -->
+        <div class="slide flex-col max-w-5xl w-full space-y-6">
+            <div class="border-b border-slate-800 pb-3">
+                <span class="text-emerald-400 font-semibold text-xs uppercase tracking-wider">App Execution</span>
+                <h2 class="text-3xl font-bold text-white mt-1">Bangkok's Safer Cycling Cockpit</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+                <div class="space-y-3 text-slate-300 text-sm">
+                    <div class="bg-slate-900 p-4 rounded-xl border border-slate-800">
+                        <strong>Fastest Direct:</strong> 38 min, 9.0 km shortest path with no detours for shade[cite: 15].
+                    </div>
+                    <div class="bg-slate-900 p-4 rounded-xl border border-slate-800">
+                        <strong>Scenic Greenway:</strong> 51 min, 11.1 km route through Benjakitti Park[cite: 15].
+                    </div>
+                </div>
+                <div class="bg-slate-900 border-2 border-dashed border-slate-800 rounded-2xl h-64 flex flex-col items-center justify-center text-center p-4">
+                    <img src="pictures/app_cockpit_ui.png" alt="Cockpit UI" class="w-full h-full object-cover rounded-xl" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <span class="text-xs text-slate-400 font-mono">📁 pictures/app_cockpit_ui.png</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 13: Voice UI & Practicality -->
+        <div class="slide flex-col max-w-5xl w-full space-y-6">
+            <div class="border-b border-slate-800 pb-3">
+                <span class="text-emerald-400 font-semibold text-xs uppercase tracking-wider">Usability & Innovation</span>
+                <h2 class="text-3xl font-bold text-white mt-1">Practicality & ElevenLabs Voice UI</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl space-y-3">
+                    <h3 class="font-bold text-emerald-400 text-lg">Simple Graphical UI</h3>
+                    <p class="text-sm text-slate-400">Clean controls for weather, flood checks, and reporting road issues instantly[cite: 15].</p>
+                </div>
+                <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl space-y-3">
+                    <h3 class="font-bold text-teal-400 text-lg">ElevenLabs Integration</h3>
+                    <p class="text-sm text-slate-400">Uses ElevenLabs for responsive, accurate TTS and STT translation so Joe can guide you hands-free[cite: 15].</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 14: Conclusion / Live WebApp -->
         <div class="slide flex-col items-center text-center max-w-3xl space-y-6">
-            <div class="inline-flex p-4 bg-emerald-500/10 border border-emerald-500/30 rounded-3xl text-emerald-400 mb-2 shadow-2xl">
-                <svg class="w-14 h-14" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.83-5.83m-3.75 3.75l-5.83-5.83A2.652 2.652 0 017.5 3.75l5.83 5.83m3.75-3.75a3 3 0 11-4.24 4.24m4.24-4.24L12 9.75"></path></svg>
+            <div class="w-24 h-24 mx-auto bg-slate-900 border-2 border-dashed border-emerald-500/50 rounded-2xl flex items-center justify-center overflow-hidden shadow-xl mb-2">
+                <img src="pictures/conclusion.png" alt="Conclusion" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <span class="text-xs text-emerald-400 font-mono text-center p-2" style="display:none;">📁 pictures/conclusion.png</span>
             </div>
             <h2 class="text-4xl font-extrabold text-white">Ride Bright, Ride Aware</h2>
-            <p class="text-xl text-slate-400 max-w-xl">Try out RideRouter right now on your phone or computer:</p>
-            <div class="pt-2">
-                <a href="https://riderouter.vercel.app" target="_blank" class="px-8 py-4 bg-emerald-600 hover:bg-emerald-500 text-white text-xl font-bold rounded-2xl shadow-2xl shadow-emerald-600/30 transition-all inline-block">
-                    🔗 riderouter.vercel.app
-                </a>
-            </div>
-            <p class="text-sm text-slate-500 pt-6 font-medium">Thank you! Open for judge questions and live Q&A.</p>
+            <p class="text-xl text-slate-400 max-w-xl">Experience RideRouter live right now:</p>
+            <a href="https://riderouter.vercel.app" target="_blank" class="px-8 py-4 bg-emerald-600 hover:bg-emerald-500 text-white text-xl font-bold rounded-2xl shadow-2xl transition-all inline-block">
+                🔗 riderouter.vercel.app
+            </a>
+            <p class="text-sm text-slate-500 pt-4 font-medium">Open for judge questions and live demo feedback!</p>
         </div>
 
     </main>
