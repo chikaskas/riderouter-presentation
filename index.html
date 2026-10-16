@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RideRouter - U-Hackathon 2026 Presentation</title>
+    <title>RideRouter - Safe Rides, Special Moments</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         .slide { display: none; }
@@ -15,11 +15,11 @@
     <!-- Top Navigation Bar -->
     <header class="w-full px-8 py-4 flex justify-between items-center border-b border-slate-800 bg-slate-900/60 backdrop-blur">
         <div class="flex items-center space-x-3">
-            <span class="bg-indigo-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">U-Hackathon 2026</span>
+            <span class="bg-emerald-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">U-Hackathon 2026</span>
             <h1 class="text-lg font-bold tracking-tight text-white">RideRouter Pitch Deck</h1>
         </div>
         <div class="text-sm font-medium text-slate-400">
-            Slide <span id="current-slide" class="text-indigo-400">1</span> of <span id="total-slides">6</span>
+            Slide <span id="current-slide" class="text-emerald-400">1</span> of <span id="total-slides">6</span>
         </div>
     </header>
 
@@ -28,133 +28,145 @@
 
         <!-- SLIDE 1: Title Slide -->
         <div class="slide active flex-col items-center text-center max-w-4xl space-y-6">
-            <div class="inline-flex p-4 bg-indigo-500/10 border border-indigo-500/30 rounded-3xl text-indigo-400 mb-2 shadow-2xl shadow-indigo-500/10">
+            <div class="inline-flex p-4 bg-emerald-500/10 border border-emerald-500/30 rounded-3xl text-emerald-400 mb-2 shadow-2xl shadow-emerald-500/10">
                 <svg class="w-14 h-14" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m6-6v8.25m.5.5b3 3 0 11-6 0m6 0h-6m6 0v-8.25m-6 8.25V15M3 13.5h3.75a2.25 2.25 0 012.25 2.25v3.75M3 13.5V9.75A2.25 2.25 0 015.25 7.5h13.5A2.25 2.25 0 0121 9.75v3.75m-18 0h18"></path></svg>
             </div>
             <h2 class="text-5xl font-black tracking-tight text-white sm:text-7xl">RideRouter</h2>
-            <p class="text-2xl text-slate-400 max-w-2xl leading-relaxed">Next-Generation Intelligent Multi-Stop Routing, powered by autonomous voice agents and real-time mapping.</p>
-            <div class="pt-6 flex flex-wrap justify-center gap-4">
-                <a href="https://riderouter.vercel.app" target="_blank" class="px-8 py-4 bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-lg rounded-2xl shadow-xl shadow-indigo-600/20 transition-all flex items-center space-x-3">
+            <p class="text-xl font-medium text-emerald-400 tracking-wide uppercase">Safe Rides, Special Moments</p>
+            <p class="text-xl text-slate-400 max-w-2xl leading-relaxed">Bangkok's safer cycling cockpit. Ride bright, ride aware with intelligent routing, hazard reporting, and voice AI.</p>
+            <div class="pt-4 flex flex-wrap justify-center gap-4">
+                <a href="https://riderouter.vercel.app" target="_blank" class="px-8 py-4 bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-lg rounded-2xl shadow-xl shadow-emerald-600/20 transition-all flex items-center space-x-3">
                     <span>🚀 Launch Live WebApp</span>
                 </a>
             </div>
         </div>
 
-        <!-- SLIDE 2: The Real-World Problem -->
+        <!-- SLIDE 2: The Urban Crisis (Problem & Facts) -->
         <div class="slide flex-col max-w-5xl w-full space-y-6">
             <div class="border-b border-slate-800 pb-3">
-                <span class="text-indigo-400 font-semibold text-xs uppercase tracking-wider">Market Need & Practicality</span>
-                <h2 class="text-3xl font-bold text-white mt-1">The Urban Delivery & Commuter Dilemma</h2>
+                <span class="text-emerald-400 font-semibold text-xs uppercase tracking-wider">The Problem in Bangkok</span>
+                <h2 class="text-3xl font-bold text-white mt-1">High Risks & Dangerous Roads</h2>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
-                <div class="space-y-4">
-                    <p class="text-slate-300 text-lg leading-relaxed">Delivery riders and everyday drivers lose precious hours and safety margins navigating broken multi-stop loops in congested cities.</p>
-                    <div class="space-y-3">
-                        <div class="bg-slate-900/80 border border-slate-800 p-4 rounded-xl flex items-start space-x-3">
-                            <span class="text-rose-400 font-bold text-xl">⚠️</span>
-                            <div>
-                                <h4 class="font-semibold text-white">Distracted Driving</h4>
-                                <p class="text-sm text-slate-400">Manual phone checks for route re-ordering cause severe accident risks.</p>
-                            </div>
-                        </div>
-                        <div class="bg-slate-900/80 border border-slate-800 p-4 rounded-xl flex items-start space-x-3">
-                            <span class="text-rose-400 font-bold text-xl">⏳</span>
-                            <div>
-                                <h4 class="font-semibold text-white">Inefficient Sequencing</h4>
-                                <p class="text-sm text-slate-400">Standard mapping tools fail to optimize complex local courier workflows.</p>
-                            </div>
-                        </div>
-                    </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="bg-slate-900 border border-slate-800 p-5 rounded-2xl space-y-2">
+                    <span class="text-3xl font-black text-rose-400">74.2%</span>
+                    <h3 class="font-bold text-white">Evening Risk Rate</h3>
+                    <p class="text-sm text-slate-400">Chances of risk in crowded areas spike drastically in evenings due to poor visibility and road conditions[cite: 5].</p>
                 </div>
-                <!-- Screenshot / Visual Frame -->
-                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 flex flex-col items-center justify-center text-center h-64 shadow-xl">
-                    <!-- REPLACE THIS DIV WITH YOUR IMG TAG IF YOU HAVE A SCREENSHOT: <img src="URL" class="rounded-xl w-full h-full object-cover"> -->
-                    <div class="text-slate-500 space-y-2">
-                        <svg class="w-12 h-12 mx-auto text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-                        <p class="text-sm font-medium text-slate-400">[ Drop Screenshot: Traffic / Pain Point View ]</p>
-                    </div>
+                <div class="bg-slate-900 border border-slate-800 p-5 rounded-2xl space-y-2">
+                    <span class="text-3xl font-black text-amber-400">75%</span>
+                    <h3 class="font-bold text-white">Unsafe Roads</h3>
+                    <p class="text-sm text-slate-400">3/4 of Bangkok roads covering 1,000 km are deemed unsafe due to sharp curves and self-structured potholes[cite: 5].</p>
+                </div>
+                <div class="bg-slate-900 border border-slate-800 p-5 rounded-2xl space-y-2">
+                    <span class="text-3xl font-black text-blue-400">4×</span>
+                    <h3 class="font-bold text-white">WHO PM2.5 Limit</h3>
+                    <p class="text-sm text-slate-400">Severe air pollution where traffic exhaust causes 26% to 60% of Bangkok's toxic PM2.5[cite: 5, 10].</p>
                 </div>
             </div>
         </div>
 
-        <!-- SLIDE 3: The Solution & App Architecture -->
+        <!-- SLIDE 3: What is RideRouter & Key Features -->
         <div class="slide flex-col max-w-5xl w-full space-y-6">
             <div class="border-b border-slate-800 pb-3">
-                <span class="text-indigo-400 font-semibold text-xs uppercase tracking-wider">App Execution & Core Engine</span>
-                <h2 class="text-3xl font-bold text-white mt-1">Meet RideRouter: Built for High Performance</h2>
+                <span class="text-emerald-400 font-semibold text-xs uppercase tracking-wider">Our Solution</span>
+                <h2 class="text-3xl font-bold text-white mt-1">Smart Routing & Safety Scoring</h2>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
-                <!-- Screenshot / Visual Frame -->
-                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 flex flex-col items-center justify-center text-center h-64 shadow-xl order-last md:order-first">
-                    <div class="text-slate-500 space-y-2">
-                        <svg class="w-12 h-12 mx-auto text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-                        <p class="text-sm font-medium text-slate-400">[ Drop Screenshot: Main Map & Route UI ]</p>
-                    </div>
-                </div>
                 <div class="space-y-4">
-                    <p class="text-slate-300 text-lg">A modern, responsive web application engineered for instant route planning and bulletproof reliability on mobile devices.</p>
+                    <p class="text-slate-300 text-lg">RideRouter is a dedicated web and mobile platform helping cyclists and tourists find the safest journey from origin to destination[cite: 3].</p>
                     <ul class="space-y-3 text-slate-300">
                         <li class="flex items-center space-x-3 bg-slate-900/60 p-3.5 rounded-xl border border-slate-800">
-                            <span class="text-indigo-400 font-bold">⚡</span> <span><strong>Lightning Fast Deployment:</strong> Hosted live on Vercel with zero latency bottlenecks.</span>
+                            <span class="text-emerald-400 font-bold">🛡️</span> <span><strong>Safety Scores:</strong> Every route is evaluated and given a distinct safety score[cite: 3].</span>
                         </li>
                         <li class="flex items-center space-x-3 bg-slate-900/60 p-3.5 rounded-xl border border-slate-800">
-                            <span class="text-indigo-400 font-bold">🗺️</span> <span><strong>Dynamic Optimization:</strong> Instant recalculation of multi-stop delivery sequences.</span>
+                            <span class="text-emerald-400 font-bold">🗺️</span> <span><strong>Custom Route Modes:</strong> Pick between Safest, Scenic (e.g., through Benjakitti Park), or Fastest Direct paths[cite: 3, 15].</span>
                         </li>
                         <li class="flex items-center space-x-3 bg-slate-900/60 p-3.5 rounded-xl border border-slate-800">
-                            <span class="text-indigo-400 font-bold">📱</span> <span><strong>Driver-First UI:</strong> High-contrast mode built specifically for sunlight visibility and phone mounts.</span>
+                            <span class="text-emerald-400 font-bold">🪙</span> <span><strong>Community Rewards:</strong> Report hazards like potholes and give feedback to earn tokens/coins[cite: 3].</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Visual / Placeholder for App View -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col justify-center space-y-4 shadow-xl">
+                    <div class="flex justify-between items-center bg-slate-800/60 p-3 rounded-xl border border-slate-700">
+                        <span class="text-xs font-semibold text-emerald-400">FASTEST DIRECT</span>
+                        <span class="text-xs text-slate-400">38 min • 9.0 km</span>
+                    </div>
+                    <div class="flex justify-between items-center bg-slate-800/60 p-3 rounded-xl border border-slate-700">
+                        <span class="text-xs font-semibold text-indigo-400">SCENIC GREENWAY</span>
+                        <span class="text-xs text-slate-400">51 min • 11.1 km</span>
+                    </div>
+                    <p class="text-xs text-center text-slate-500">[ Live Interactive Routing & Weather Integration ]</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 4: Health Benefits & Target Audience -->
+        <div class="slide flex-col max-w-5xl w-full space-y-6">
+            <div class="border-b border-slate-800 pb-3">
+                <span class="text-emerald-400 font-semibold text-xs uppercase tracking-wider">Target Audience & Impact</span>
+                <h2 class="text-3xl font-bold text-white mt-1">Who We Help & Health Transformation</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl space-y-4">
+                    <h3 class="text-xl font-bold text-emerald-300">👥 Target Consumers</h3>
+                    <div class="space-y-3">
+                        <div class="bg-slate-800/50 p-3.5 rounded-xl border border-slate-700/50">
+                            <h4 class="font-semibold text-white">🚲 Cycling Enthusiasts</h4>
+                            <p class="text-sm text-slate-400">Commuters and riders looking for secure, optimized city paths.</p>
+                        </div>
+                        <div class="bg-slate-800/50 p-3.5 rounded-xl border border-slate-700/50">
+                            <h4 class="font-semibold text-white">❤️ Health-Conscious Individuals</h4>
+                            <p class="text-sm text-slate-400">Those following an active, healthy lifestyle.</p>
+                        </div>
+                        <div class="bg-slate-800/50 p-3.5 rounded-xl border border-slate-700/50">
+                            <h4 class="font-semibold text-white">🧳 Tourists</h4>
+                            <p class="text-sm text-slate-400">Visitors exploring new city places safely on two wheels[cite: 7].</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl space-y-4">
+                    <h3 class="text-xl font-bold text-emerald-300">💪 The Power of Cycling</h3>
+                    <ul class="space-y-3 text-slate-300 text-sm">
+                        <li class="flex items-start space-x-2">
+                            <span class="text-emerald-400 font-bold">•</span>
+                            <span>Slashes heart disease risk by <strong>46% to 52%</strong> and cuts diabetes/cancer risks by up to <strong>40%</strong>[cite: 9].</span>
+                        </li>
+                        <li class="flex items-start space-x-2">
+                            <span class="text-emerald-400 font-bold">•</span>
+                            <span><strong>59%</strong> of cyclists directly link riding to increased personal joy and reduced stress[cite: 9].</span>
+                        </li>
+                        <li class="flex items-start space-x-2">
+                            <span class="text-emerald-400 font-bold">•</span>
+                            <span>Cardiovascular exercise gains heavily outweigh pollution risks for daily urban commuters[cite: 10].</span>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
 
-        <!-- SLIDE 4: U-Bot & ElevenLabs Integration -->
+        <!-- SLIDE 5: U-Bot & ElevenLabs Voice Integration -->
         <div class="slide flex-col max-w-5xl w-full space-y-6">
             <div class="border-b border-slate-800 pb-3">
-                <span class="text-indigo-400 font-semibold text-xs uppercase tracking-wider">Innovation & Environment Integration</span>
-                <h2 class="text-3xl font-bold text-white mt-1">Autonomous Voice & Agentic Co-Pilot</h2>
+                <span class="text-emerald-400 font-semibold text-xs uppercase tracking-wider">Advanced Technology</span>
+                <h2 class="text-3xl font-bold text-white mt-1">Joe (U-Bot) & ElevenLabs Voice UI</h2>
             </div>
-            <p class="text-slate-300 text-lg">We integrated state-of-the-art voice and intelligence models to create a truly hands-free driving assistant.</p>
+            <p class="text-slate-300 text-lg">Designed for maximum safety so riders never take their hands off the handlebars.</p>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2">
-                <div class="bg-indigo-950/20 border border-indigo-500/30 p-6 rounded-2xl space-y-3">
+                <div class="bg-emerald-950/20 border border-emerald-500/30 p-6 rounded-2xl space-y-3">
                     <div class="flex items-center space-x-3">
-                        <div class="p-2 bg-indigo-500/20 rounded-xl text-indigo-400">🤖</div>
-                        <h3 class="text-xl font-bold text-indigo-200">U-Bot Agentic Core</h3>
+                        <div class="p-2 bg-emerald-500/20 rounded-xl text-emerald-400">🤖</div>
+                        <h3 class="text-xl font-bold text-emerald-200">Joe Personal Assistant</h3>
                     </div>
-                    <p class="text-slate-300 leading-relaxed">Acts as the intelligent decision-making co-pilot. Drivers can speak conversational destinations or changes, and U-Bot structures the request into optimized routing commands instantly.</p>
+                    <p class="text-slate-300 leading-relaxed text-sm">Acts as your intelligent on-road companion, delivering hands-free direction guidance and live insights dynamically[cite: 15].</p>
                 </div>
                 <div class="bg-teal-950/20 border border-teal-500/30 p-6 rounded-2xl space-y-3">
                     <div class="flex items-center space-x-3">
                         <div class="p-2 bg-teal-500/20 rounded-xl text-teal-400">🎙️</div>
-                        <h3 class="text-xl font-bold text-teal-200">ElevenLabs Voice Synthesis</h3>
+                        <h3 class="text-xl font-bold text-teal-200">ElevenLabs TTS & STT</h3>
                     </div>
-                    <p class="text-slate-300 leading-relaxed">Provides ultra-realistic, low-latency audio responses. Drivers receive clear vocal turn-by-turn guidance without ever needing to look away from the road or touch their screen.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- SLIDE 5: Usability & Impact -->
-        <div class="slide flex-col max-w-5xl w-full space-y-6">
-            <div class="border-b border-slate-800 pb-3">
-                <span class="text-indigo-400 font-semibold text-xs uppercase tracking-wider">User Experience & Scalability</span>
-                <h2 class="text-3xl font-bold text-white mt-1">Designed for Everyday Adoption</h2>
-            </div>
-            <p class="text-slate-300 text-lg">Powerful technology packaged in an intuitive interface with zero learning curve.</p>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-2">
-                <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl text-center space-y-3">
-                    <div class="text-3xl">🎯</div>
-                    <h3 class="font-bold text-white text-lg">Zero Friction</h3>
-                    <p class="text-sm text-slate-400 leading-relaxed">Open the link, type or speak your stops, and go immediately.</p>
-                </div>
-                <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl text-center space-y-3">
-                    <div class="text-3xl">🛡️</div>
-                    <h3 class="font-bold text-white text-lg">Enhanced Safety</h3>
-                    <p class="text-sm text-slate-400 leading-relaxed">Voice-first design keeps driver hands on the handlebars and eyes ahead.</p>
-                </div>
-                <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl text-center space-y-3">
-                    <div class="text-3xl">📈</div>
-                    <h3 class="font-bold text-white text-lg">Ready to Scale</h3>
-                    <p class="text-sm text-slate-400 leading-relaxed">Easily extensible for commercial delivery fleets and couriers globally.</p>
+                    <p class="text-slate-300 leading-relaxed text-sm">Utilizes ElevenLabs for responsive, ultra-accurate Text-to-Speech and Speech-to-Text translation, making voice interaction seamless[cite: 15].</p>
                 </div>
             </div>
         </div>
@@ -164,14 +176,14 @@
             <div class="inline-flex p-4 bg-emerald-500/10 border border-emerald-500/30 rounded-3xl text-emerald-400 mb-2 shadow-2xl">
                 <svg class="w-14 h-14" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.83-5.83m-3.75 3.75l-5.83-5.83A2.652 2.652 0 017.5 3.75l5.83 5.83m3.75-3.75a3 3 0 11-4.24 4.24m4.24-4.24L12 9.75"></path></svg>
             </div>
-            <h2 class="text-4xl font-extrabold text-white">Experience RideRouter Live</h2>
-            <p class="text-xl text-slate-400 max-w-xl">Test out the routing engine and voice integration right from your own device:</p>
+            <h2 class="text-4xl font-extrabold text-white">Ride Bright, Ride Aware</h2>
+            <p class="text-xl text-slate-400 max-w-xl">Try out RideRouter right now on your phone or computer:</p>
             <div class="pt-2">
-                <a href="https://riderouter.vercel.app" target="_blank" class="px-8 py-4 bg-indigo-600 hover:bg-indigo-500 text-white text-xl font-bold rounded-2xl shadow-2xl shadow-indigo-600/30 transition-all inline-block">
+                <a href="https://riderouter.vercel.app" target="_blank" class="px-8 py-4 bg-emerald-600 hover:bg-emerald-500 text-white text-xl font-bold rounded-2xl shadow-2xl shadow-emerald-600/30 transition-all inline-block">
                     🔗 riderouter.vercel.app
                 </a>
             </div>
-            <p class="text-sm text-slate-500 pt-6 font-medium">Thank you! Open for judge questions and live demo feedback.</p>
+            <p class="text-sm text-slate-500 pt-6 font-medium">Thank you! Open for judge questions and live Q&A.</p>
         </div>
 
     </main>
@@ -180,7 +192,7 @@
     <footer class="w-full px-8 py-4 flex justify-between items-center border-t border-slate-800 bg-slate-900/60 backdrop-blur">
         <button id="prev-btn" onclick="changeSlide(-1)" class="px-5 py-2.5 bg-slate-800 hover:bg-slate-700 text-slate-300 font-semibold rounded-xl transition disabled:opacity-30 cursor-pointer" disabled>← Previous</button>
         <div class="text-xs font-medium text-slate-500 hidden sm:block">Tip: Use Arrow Keys (← / →) or Spacebar to Navigate</div>
-        <button id="next-btn" onclick="changeSlide(1)" class="px-5 py-2.5 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold rounded-xl transition cursor-pointer">Next →</button>
+        <button id="next-btn" onclick="changeSlide(1)" class="px-5 py-2.5 bg-emerald-600 hover:bg-emerald-500 text-white font-semibold rounded-xl transition cursor-pointer">Next →</button>
     </footer>
 
     <script>
