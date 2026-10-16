@@ -10,140 +10,177 @@
         .slide.active { display: flex; }
     </style>
 </head>
-<body class="bg-slate-900 text-slate-100 h-screen flex flex-col justify-between overflow-hidden font-sans">
+<body class="bg-slate-950 text-slate-100 h-screen flex flex-col justify-between overflow-hidden font-sans">
 
     <!-- Top Navigation Bar -->
-    <header class="w-full px-8 py-4 flex justify-between items-center border-b border-slate-800 bg-slate-950/50 backdrop-blur">
+    <header class="w-full px-8 py-4 flex justify-between items-center border-b border-slate-800 bg-slate-900/60 backdrop-blur">
         <div class="flex items-center space-x-3">
-            <span class="bg-indigo-600 text-white text-xs font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">U-Hackathon 2026</span>
-            <h1 class="text-lg font-semibold tracking-tight text-slate-200">RideRouter Presentation</h1>
+            <span class="bg-indigo-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">U-Hackathon 2026</span>
+            <h1 class="text-lg font-bold tracking-tight text-white">RideRouter Pitch Deck</h1>
         </div>
-        <div class="text-sm text-slate-400">
-            Slide <span id="current-slide">1</span> of <span id="total-slides">6</span>
+        <div class="text-sm font-medium text-slate-400">
+            Slide <span id="current-slide" class="text-indigo-400">1</span> of <span id="total-slides">6</span>
         </div>
     </header>
 
     <!-- Main Slide Container -->
-    <main class="flex-1 flex items-center justify-center p-8 relative overflow-y-auto">
+    <main class="flex-1 flex items-center justify-center p-6 sm:p-10 relative overflow-y-auto">
 
         <!-- SLIDE 1: Title Slide -->
-        <div class="slide active flex-col items-center text-center max-w-3xl space-y-6">
-            <div class="inline-block p-3 bg-indigo-500/10 border border-indigo-500/20 rounded-2xl text-indigo-400 mb-2">
-                <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m6-6v8.25m.5.5b3 3 0 11-6 0m6 0h-6m6 0v-8.25m-6 8.25V15M3 13.5h3.75a2.25 2.25 0 012.25 2.25v3.75M3 13.5V9.75A2.25 2.25 0 015.25 7.5h13.5A2.25 2.25 0 0121 9.75v3.75m-18 0h18"></path></svg>
+        <div class="slide active flex-col items-center text-center max-w-4xl space-y-6">
+            <div class="inline-flex p-4 bg-indigo-500/10 border border-indigo-500/30 rounded-3xl text-indigo-400 mb-2 shadow-2xl shadow-indigo-500/10">
+                <svg class="w-14 h-14" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m6-6v8.25m.5.5b3 3 0 11-6 0m6 0h-6m6 0v-8.25m-6 8.25V15M3 13.5h3.75a2.25 2.25 0 012.25 2.25v3.75M3 13.5V9.75A2.25 2.25 0 015.25 7.5h13.5A2.25 2.25 0 0121 9.75v3.75m-18 0h18"></path></svg>
             </div>
-            <h2 class="text-5xl font-extrabold tracking-tight text-white sm:text-6xl">RideRouter</h2>
-            <p class="text-xl text-slate-400 leading-relaxed">Next-Generation Intelligent Routing powered by U-Bot & ElevenLabs Voice Integration.</p>
-            <div class="pt-4 flex flex-wrap justify-center gap-4">
-                <a href="https://riderouter.vercel.app" target="_blank" class="px-6 py-3 bg-indigo-600 hover:bg-indigo-500 text-white font-medium rounded-xl shadow-lg transition-all flex items-center space-x-2">
+            <h2 class="text-5xl font-black tracking-tight text-white sm:text-7xl">RideRouter</h2>
+            <p class="text-2xl text-slate-400 max-w-2xl leading-relaxed">Next-Generation Intelligent Multi-Stop Routing, powered by autonomous voice agents and real-time mapping.</p>
+            <div class="pt-6 flex flex-wrap justify-center gap-4">
+                <a href="https://riderouter.vercel.app" target="_blank" class="px-8 py-4 bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-lg rounded-2xl shadow-xl shadow-indigo-600/20 transition-all flex items-center space-x-3">
                     <span>🚀 Launch Live WebApp</span>
                 </a>
             </div>
         </div>
 
-        <!-- SLIDE 2: Practicality (40%) -->
-        <div class="slide flex-col max-w-4xl w-full space-y-6">
+        <!-- SLIDE 2: The Real-World Problem -->
+        <div class="slide flex-col max-w-5xl w-full space-y-6">
             <div class="border-b border-slate-800 pb-3">
-                <span class="text-indigo-400 font-semibold text-sm uppercase tracking-wider">Judging Weight: 40%</span>
-                <h2 class="text-3xl font-bold text-white mt-1">Practicality & Real-World Impact</h2>
+                <span class="text-indigo-400 font-semibold text-xs uppercase tracking-wider">Market Need & Practicality</span>
+                <h2 class="text-3xl font-bold text-white mt-1">The Urban Delivery & Commuter Dilemma</h2>
             </div>
-            <p class="text-slate-300 text-lg">Daily urban commuters and delivery riders lose hours navigating inefficient, congested routes without contextual voice assistance.</p>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
-                <div class="bg-slate-800/50 border border-slate-700/50 p-6 rounded-2xl">
-                    <h3 class="text-xl font-semibold text-indigo-300 mb-2">🎯 The Problem</h3>
-                    <p class="text-slate-400">Traditional navigation apps lack hands-free intelligence, dynamic traffic adjustments, and localized multimodal flexibility.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+                <div class="space-y-4">
+                    <p class="text-slate-300 text-lg leading-relaxed">Delivery riders and everyday drivers lose precious hours and safety margins navigating broken multi-stop loops in congested cities.</p>
+                    <div class="space-y-3">
+                        <div class="bg-slate-900/80 border border-slate-800 p-4 rounded-xl flex items-start space-x-3">
+                            <span class="text-rose-400 font-bold text-xl">⚠️</span>
+                            <div>
+                                <h4 class="font-semibold text-white">Distracted Driving</h4>
+                                <p class="text-sm text-slate-400">Manual phone checks for route re-ordering cause severe accident risks.</p>
+                            </div>
+                        </div>
+                        <div class="bg-slate-900/80 border border-slate-800 p-4 rounded-xl flex items-start space-x-3">
+                            <span class="text-rose-400 font-bold text-xl">⏳</span>
+                            <div>
+                                <h4 class="font-semibold text-white">Inefficient Sequencing</h4>
+                                <p class="text-sm text-slate-400">Standard mapping tools fail to optimize complex local courier workflows.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="bg-slate-800/50 border border-slate-700/50 p-6 rounded-2xl">
-                    <h3 class="text-xl font-semibold text-emerald-300 mb-2">💡 The Solution</h3>
-                    <p class="text-slate-400">RideRouter optimizes multi-stop routes instantly while enabling hands-free voice control so drivers stay safe and efficient.</p>
+                <!-- Screenshot / Visual Frame -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 flex flex-col items-center justify-center text-center h-64 shadow-xl">
+                    <!-- REPLACE THIS DIV WITH YOUR IMG TAG IF YOU HAVE A SCREENSHOT: <img src="URL" class="rounded-xl w-full h-full object-cover"> -->
+                    <div class="text-slate-500 space-y-2">
+                        <svg class="w-12 h-12 mx-auto text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                        <p class="text-sm font-medium text-slate-400">[ Drop Screenshot: Traffic / Pain Point View ]</p>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <!-- SLIDE 3: App Execution (40%) -->
-        <div class="slide flex-col max-w-4xl w-full space-y-6">
+        <!-- SLIDE 3: The Solution & App Architecture -->
+        <div class="slide flex-col max-w-5xl w-full space-y-6">
             <div class="border-b border-slate-800 pb-3">
-                <span class="text-indigo-400 font-semibold text-sm uppercase tracking-wider">Judging Weight: 40%</span>
-                <h2 class="text-3xl font-bold text-white mt-1">Robust App Execution & Stack</h2>
+                <span class="text-indigo-400 font-semibold text-xs uppercase tracking-wider">App Execution & Core Engine</span>
+                <h2 class="text-3xl font-bold text-white mt-1">Meet RideRouter: Built for High Performance</h2>
             </div>
-            <p class="text-slate-300 text-lg">Built with high-performance modern web tooling, fully functional, and deployed live.</p>
-            <ul class="space-y-3 text-slate-300">
-                <li class="flex items-center space-x-3 bg-slate-800/40 p-4 rounded-xl border border-slate-700/40">
-                    <span class="text-indigo-400 font-bold">⚡</span> <span><strong>Live Architecture:</strong> Hosted seamlessly on Vercel with zero latency bottlenecks (<a href="https://riderouter.vercel.app" class="text-indigo-400 underline" target="_blank">riderouter.vercel.app</a>).</span>
-                </li>
-                <li class="flex items-center space-x-3 bg-slate-800/40 p-4 rounded-xl border border-slate-700/40">
-                    <span class="text-indigo-400 font-bold">🛡️</span> <span><strong>Error Resilience:</strong> Robust fallback routes, responsive UI states, and optimized API payloads.</span>
-                </li>
-                <li class="flex items-center space-x-3 bg-slate-800/40 p-4 rounded-xl border border-slate-700/40">
-                    <span class="text-indigo-400 font-bold">🚀</span> <span><strong>Performance:</strong> Instant client-side re-renders and quick map data retrieval.</span>
-                </li>
-            </ul>
-        </div>
-
-        <!-- SLIDE 4: Usability (10%) -->
-        <div class="slide flex-col max-w-4xl w-full space-y-6">
-            <div class="border-b border-slate-800 pb-3">
-                <span class="text-indigo-400 font-semibold text-sm uppercase tracking-wider">Judging Weight: 10%</span>
-                <h2 class="text-3xl font-bold text-white mt-1">Usability & User Experience</h2>
-            </div>
-            <p class="text-slate-300 text-lg">Designed for maximum clarity so drivers can interact with zero cognitive friction.</p>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2">
-                <div class="bg-slate-800/50 p-5 rounded-2xl border border-slate-700/50 text-center">
-                    <div class="text-2xl mb-2">👆</div>
-                    <h3 class="font-semibold text-white">Zero Learning Curve</h3>
-                    <p class="text-sm text-slate-400 mt-1">Clean, minimalist interface layout.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+                <!-- Screenshot / Visual Frame -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 flex flex-col items-center justify-center text-center h-64 shadow-xl order-last md:order-first">
+                    <div class="text-slate-500 space-y-2">
+                        <svg class="w-12 h-12 mx-auto text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                        <p class="text-sm font-medium text-slate-400">[ Drop Screenshot: Main Map & Route UI ]</p>
+                    </div>
                 </div>
-                <div class="bg-slate-800/50 p-5 rounded-2xl border border-slate-700/50 text-center">
-                    <div class="text-2xl mb-2">📱</div>
-                    <h3 class="font-semibold text-white">Mobile Optimized</h3>
-                    <p class="text-sm text-slate-400 mt-1">Built perfectly for phone mounts on the road.</p>
-                </div>
-                <div class="bg-slate-800/50 p-5 rounded-2xl border border-slate-700/50 text-center">
-                    <div class="text-2xl mb-2">👁️</div>
-                    <h3 class="font-semibold text-white">High Contrast</h3>
-                    <p class="text-sm text-slate-400 mt-1">Readable under direct sunlight conditions.</p>
+                <div class="space-y-4">
+                    <p class="text-slate-300 text-lg">A modern, responsive web application engineered for instant route planning and bulletproof reliability on mobile devices.</p>
+                    <ul class="space-y-3 text-slate-300">
+                        <li class="flex items-center space-x-3 bg-slate-900/60 p-3.5 rounded-xl border border-slate-800">
+                            <span class="text-indigo-400 font-bold">⚡</span> <span><strong>Lightning Fast Deployment:</strong> Hosted live on Vercel with zero latency bottlenecks.</span>
+                        </li>
+                        <li class="flex items-center space-x-3 bg-slate-900/60 p-3.5 rounded-xl border border-slate-800">
+                            <span class="text-indigo-400 font-bold">🗺️</span> <span><strong>Dynamic Optimization:</strong> Instant recalculation of multi-stop delivery sequences.</span>
+                        </li>
+                        <li class="flex items-center space-x-3 bg-slate-900/60 p-3.5 rounded-xl border border-slate-800">
+                            <span class="text-indigo-400 font-bold">📱</span> <span><strong>Driver-First UI:</strong> High-contrast mode built specifically for sunlight visibility and phone mounts.</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
 
-        <!-- SLIDE 5: Innovation & Environment Integration (10% Total) -->
-        <div class="slide flex-col max-w-4xl w-full space-y-6">
+        <!-- SLIDE 4: U-Bot & ElevenLabs Integration -->
+        <div class="slide flex-col max-w-5xl w-full space-y-6">
             <div class="border-b border-slate-800 pb-3">
-                <span class="text-indigo-400 font-semibold text-sm uppercase tracking-wider">Judging Weight: 5% Innovation + 5% Environment</span>
-                <h2 class="text-3xl font-bold text-white mt-1">U-Bot & ElevenLabs Integration</h2>
+                <span class="text-indigo-400 font-semibold text-xs uppercase tracking-wider">Innovation & Environment Integration</span>
+                <h2 class="text-3xl font-bold text-white mt-1">Autonomous Voice & Agentic Co-Pilot</h2>
             </div>
-            <p class="text-slate-300 text-lg">Combining advanced agentic workflows with hyper-realistic voice feedback.</p>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div class="bg-indigo-950/30 border border-indigo-500/30 p-6 rounded-2xl">
-                    <h3 class="text-xl font-semibold text-indigo-300 mb-2">🤖 U-Bot Integration (5%)</h3>
-                    <p class="text-slate-400">Acts as the intelligent co-pilot agent processing real-time destination requests and route adjustments dynamically.</p>
+            <p class="text-slate-300 text-lg">We integrated state-of-the-art voice and intelligence models to create a truly hands-free driving assistant.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2">
+                <div class="bg-indigo-950/20 border border-indigo-500/30 p-6 rounded-2xl space-y-3">
+                    <div class="flex items-center space-x-3">
+                        <div class="p-2 bg-indigo-500/20 rounded-xl text-indigo-400">🤖</div>
+                        <h3 class="text-xl font-bold text-indigo-200">U-Bot Agentic Core</h3>
+                    </div>
+                    <p class="text-slate-300 leading-relaxed">Acts as the intelligent decision-making co-pilot. Drivers can speak conversational destinations or changes, and U-Bot structures the request into optimized routing commands instantly.</p>
                 </div>
-                <div class="bg-teal-950/30 border border-teal-500/30 p-6 rounded-2xl">
-                    <h3 class="text-xl font-semibold text-teal-300 mb-2">🎙️ ElevenLabs Voice (5%)</h3>
-                    <p class="text-slate-400">Provides natural, ultra-realistic voice prompts and conversational route guidance so riders never take their eyes off the road.</p>
+                <div class="bg-teal-950/20 border border-teal-500/30 p-6 rounded-2xl space-y-3">
+                    <div class="flex items-center space-x-3">
+                        <div class="p-2 bg-teal-500/20 rounded-xl text-teal-400">🎙️</div>
+                        <h3 class="text-xl font-bold text-teal-200">ElevenLabs Voice Synthesis</h3>
+                    </div>
+                    <p class="text-slate-300 leading-relaxed">Provides ultra-realistic, low-latency audio responses. Drivers receive clear vocal turn-by-turn guidance without ever needing to look away from the road or touch their screen.</p>
                 </div>
             </div>
         </div>
 
-        <!-- SLIDE 6: Conclusion -->
+        <!-- SLIDE 5: Usability & Impact -->
+        <div class="slide flex-col max-w-5xl w-full space-y-6">
+            <div class="border-b border-slate-800 pb-3">
+                <span class="text-indigo-400 font-semibold text-xs uppercase tracking-wider">User Experience & Scalability</span>
+                <h2 class="text-3xl font-bold text-white mt-1">Designed for Everyday Adoption</h2>
+            </div>
+            <p class="text-slate-300 text-lg">Powerful technology packaged in an intuitive interface with zero learning curve.</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-2">
+                <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl text-center space-y-3">
+                    <div class="text-3xl">🎯</div>
+                    <h3 class="font-bold text-white text-lg">Zero Friction</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">Open the link, type or speak your stops, and go immediately.</p>
+                </div>
+                <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl text-center space-y-3">
+                    <div class="text-3xl">🛡️</div>
+                    <h3 class="font-bold text-white text-lg">Enhanced Safety</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">Voice-first design keeps driver hands on the handlebars and eyes ahead.</p>
+                </div>
+                <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl text-center space-y-3">
+                    <div class="text-3xl">📈</div>
+                    <h3 class="font-bold text-white text-lg">Ready to Scale</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">Easily extensible for commercial delivery fleets and couriers globally.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 6: Conclusion / Live Demo -->
         <div class="slide flex-col items-center text-center max-w-3xl space-y-6">
-            <div class="inline-block p-3 bg-emerald-500/10 border border-emerald-500/20 rounded-2xl text-emerald-400 mb-2">
-                <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.83-5.83m-3.75 3.75l-5.83-5.83A2.652 2.652 0 017.5 3.75l5.83 5.83m3.75-3.75a3 3 0 11-4.24 4.24m4.24-4.24L12 9.75"></path></svg>
+            <div class="inline-flex p-4 bg-emerald-500/10 border border-emerald-500/30 rounded-3xl text-emerald-400 mb-2 shadow-2xl">
+                <svg class="w-14 h-14" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.83-5.83m-3.75 3.75l-5.83-5.83A2.652 2.652 0 017.5 3.75l5.83 5.83m3.75-3.75a3 3 0 11-4.24 4.24m4.24-4.24L12 9.75"></path></svg>
             </div>
-            <h2 class="text-4xl font-extrabold text-white">Thank You!</h2>
-            <p class="text-xl text-slate-400">Explore RideRouter live right now:</p>
-            <a href="https://riderouter.vercel.app" target="_blank" class="px-8 py-4 bg-indigo-600 hover:bg-indigo-500 text-white text-lg font-bold rounded-xl shadow-xl transition-all">
-                🔗 riderouter.vercel.app
-            </a>
-            <p class="text-sm text-slate-500 pt-4">Ready for live Q&A with the U-Hackathon 2026 Judges!</p>
+            <h2 class="text-4xl font-extrabold text-white">Experience RideRouter Live</h2>
+            <p class="text-xl text-slate-400 max-w-xl">Test out the routing engine and voice integration right from your own device:</p>
+            <div class="pt-2">
+                <a href="https://riderouter.vercel.app" target="_blank" class="px-8 py-4 bg-indigo-600 hover:bg-indigo-500 text-white text-xl font-bold rounded-2xl shadow-2xl shadow-indigo-600/30 transition-all inline-block">
+                    🔗 riderouter.vercel.app
+                </a>
+            </div>
+            <p class="text-sm text-slate-500 pt-6 font-medium">Thank you! Open for judge questions and live demo feedback.</p>
         </div>
 
     </main>
 
     <!-- Bottom Navigation Footer -->
-    <footer class="w-full px-8 py-4 flex justify-between items-center border-t border-slate-800 bg-slate-950/50 backdrop-blur">
-        <button id="prev-btn" onclick="changeSlide(-1)" class="px-5 py-2 bg-slate-800 hover:bg-slate-700 text-slate-300 font-medium rounded-lg transition disabled:opacity-30" disabled>← Previous</button>
-        <div class="text-xs text-slate-500 hidden sm:block">Use Keyboard Arrow Keys (← / →) to Navigate</div>
-        <button id="next-btn" onclick="changeSlide(1)" class="px-5 py-2 bg-indigo-600 hover:bg-indigo-500 text-white font-medium rounded-lg transition">Next →</button>
+    <footer class="w-full px-8 py-4 flex justify-between items-center border-t border-slate-800 bg-slate-900/60 backdrop-blur">
+        <button id="prev-btn" onclick="changeSlide(-1)" class="px-5 py-2.5 bg-slate-800 hover:bg-slate-700 text-slate-300 font-semibold rounded-xl transition disabled:opacity-30 cursor-pointer" disabled>← Previous</button>
+        <div class="text-xs font-medium text-slate-500 hidden sm:block">Tip: Use Arrow Keys (← / →) or Spacebar to Navigate</div>
+        <button id="next-btn" onclick="changeSlide(1)" class="px-5 py-2.5 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold rounded-xl transition cursor-pointer">Next →</button>
     </footer>
 
     <script>
